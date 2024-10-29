@@ -6,17 +6,22 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2699A4AA2CD133DA00E5A0FE /* GeometricFiguresConeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2699A4A92CD133DA00E5A0FE /* GeometricFiguresConeApp.swift */; };
+		2699A4DB2CD13B2C00E5A0FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2699A4D92CD13B2C00E5A0FE /* Assets.xcassets */; };
+		2699A4DC2CD13B2C00E5A0FE /* Cone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2699A4D42CD13B2C00E5A0FE /* Cone.swift */; };
+		2699A4DD2CD13B2C00E5A0FE /* ConeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2699A4D72CD13B2C00E5A0FE /* ConeView.swift */; };
+		2699A4DF2CD13B5000E5A0FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2699A4DE2CD13B5000E5A0FE /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2699A4A62CD133DA00E5A0FE /* GeometricFiguresCone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometricFiguresCone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2699A4A92CD133DA00E5A0FE /* GeometricFiguresConeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometricFiguresConeApp.swift; sourceTree = "<group>"; };
+		2699A4D42CD13B2C00E5A0FE /* Cone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cone.swift; sourceTree = "<group>"; };
+		2699A4D72CD13B2C00E5A0FE /* ConeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConeView.swift; sourceTree = "<group>"; };
+		2699A4D92CD13B2C00E5A0FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2699A4DE2CD13B5000E5A0FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		2699A4A82CD133DA00E5A0FE /* GeometricFiguresCone */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = GeometricFiguresCone;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2699A4A32CD133DA00E5A0FE /* Frameworks */ = {
@@ -32,7 +37,8 @@
 		2699A49D2CD133DA00E5A0FE = {
 			isa = PBXGroup;
 			children = (
-				2699A4A82CD133DA00E5A0FE /* GeometricFiguresCone */,
+				2699A4A92CD133DA00E5A0FE /* GeometricFiguresConeApp.swift */,
+				2699A4DA2CD13B2C00E5A0FE /* GeometricFiguresCone */,
 				2699A4A72CD133DA00E5A0FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +49,41 @@
 				2699A4A62CD133DA00E5A0FE /* GeometricFiguresCone.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2699A4D52CD13B2C00E5A0FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2699A4D42CD13B2C00E5A0FE /* Cone.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2699A4D62CD13B2C00E5A0FE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2699A4DE2CD13B5000E5A0FE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2699A4D82CD13B2C00E5A0FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2699A4D72CD13B2C00E5A0FE /* ConeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2699A4DA2CD13B2C00E5A0FE /* GeometricFiguresCone */ = {
+			isa = PBXGroup;
+			children = (
+				2699A4D52CD13B2C00E5A0FE /* Model */,
+				2699A4D82CD13B2C00E5A0FE /* Views */,
+				2699A4D62CD13B2C00E5A0FE /* Preview Content */,
+				2699A4D92CD13B2C00E5A0FE /* Assets.xcassets */,
+			);
+			path = GeometricFiguresCone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +100,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				2699A4A82CD133DA00E5A0FE /* GeometricFiguresCone */,
 			);
 			name = GeometricFiguresCone;
 			packageProductDependencies = (
@@ -109,6 +147,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2699A4DF2CD13B5000E5A0FE /* Preview Assets.xcassets in Resources */,
+				2699A4DB2CD13B2C00E5A0FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2699A4AA2CD133DA00E5A0FE /* GeometricFiguresConeApp.swift in Sources */,
+				2699A4DC2CD13B2C00E5A0FE /* Cone.swift in Sources */,
+				2699A4DD2CD13B2C00E5A0FE /* ConeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct GeometricFiguresConeApp: App {
+    
+    // MARK: Computed Properties
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ConeView()
         }
     }
 }
