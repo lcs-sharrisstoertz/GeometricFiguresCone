@@ -11,7 +11,7 @@ import SwiftUI
 struct ConeView: View {
     
     // MARK: Stored Properties
-    @State var currentCone = Cone(radius: 10, side: 10, height: 10)
+    @State var currentCone = Cone(radius: 50, side: 50, height: 50)
     
     // MARK: Computed Properties
     
@@ -24,7 +24,7 @@ struct ConeView: View {
                 .scaledToFit()
             
             // Label (describe what the slider is for)
-            Text("Radius")
+            Text("Radius (cm): \(currentCone.radius.formatted())")
             
             // 1. INPUT
             // Slider control - to allow for user input
@@ -35,7 +35,7 @@ struct ConeView: View {
             )
             
             // Label (describe what the slider is for)
-            Text("Side")
+            Text("Side (cm): \(currentCone.side.formatted())")
             
             Slider(
                 value: $currentCone.side,
@@ -44,7 +44,7 @@ struct ConeView: View {
             )
             
             // Label (describe what the slider is for)
-            Text("Height")
+            Text("Height (cm): \(currentCone.height.formatted())")
             
             Slider(
                 value: $currentCone.height,
@@ -53,17 +53,15 @@ struct ConeView: View {
             )
             
             // 3. OUTPUT
-            // Label (show the current slider value)
-            Text("Radius is: \(currentCone.radius.formatted())")
             
             // Label (show the diameter)
-            Text("Diameter is: \(currentCone.diameter.formatted())")
+            Text("Diameter (cm) is: \(currentCone.diameter.formatted())")
             
             // Label (show the surface area)
-            Text("Surface Area is: \(currentCone.surfaceArea.formatted())")
+            Text("Surface Area (cm) is: \(currentCone.surfaceArea.formatted())")
             
             // Label (show the volume)
-            Text("Volume is: \(currentCone.volume.formatted())")
+            Text("Volume (mL) is: \(currentCone.volume.formatted())")
             
             Spacer()
             
